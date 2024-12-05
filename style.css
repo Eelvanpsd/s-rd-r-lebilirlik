@@ -1,0 +1,58 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Pop-up Ayarları */
+.popup {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center; /* Yatayda ortala */
+    align-items: center;     /* Dikeyde ortala */
+    z-index: 1000;
+}
+
+/* Pop-up İçeriği */
+.popup-content {
+    display: flex;
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center;     /* İçeriği dikeyde ortala */
+    max-width: 90%;          /* İçeriğin genişliği ekranın %90'ı kadar */
+    max-height: 90%;         /* İçeriğin yüksekliği ekranın %90'ı kadar */
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Medya Öğeleri (Resimler ve Videolar) */
+.media {
+    max-width: 100%;          /* Görselin/videonun ekranın genişliğine sığmasını sağlar */
+    max-height: 100%;         /* Görselin/videonun ekranın yüksekliğine sığmasını sağlar */
+    width: auto;              /* Görselin genişliğini ekranın boyutlarına orantılar */
+    height: auto;             /* Görselin yüksekliğini orantılı olarak ayarlar */
+    object-fit: contain;      /* Görsel veya video, ekranın içine sığar, en/boy oranını bozmadan */
+    display: block;           /* Görseli blok seviyesinde göster */
+}
+
+/* Kapatma Butonu */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}

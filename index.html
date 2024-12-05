@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medya Pop-up Görüntüleyici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <button class="media-button" data-target="media1">Medya 1</button>
+        <button class="media-button" data-target="media2">Medya 2</button>
+        <button class="media-button" data-target="media3">Medya 3</button>
+        <button class="media-button" data-target="media4">Medya 4</button>
+        <button class="media-button" data-target="media5">Medya 5</button>
+        <button class="media-button" data-target="media6">Medya 6</button>
+    </div>
+
+    <!-- Pop-up Container -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img id="popup-image" class="media" src="" alt="" style="display: none;" />
+            <video id="popup-video" class="media" controls style="display: none;">
+                <source src="" type="video/mp4">
+                Tarayıcınız bu videoyu desteklemiyor.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
